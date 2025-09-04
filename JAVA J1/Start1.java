@@ -1,5 +1,5 @@
 public class Start1 {
-    public static void main(String[] args) {
-        System.out.println("Hello, DSA Journey!");
+    public static void main(String args[]) {
+        System.out.print("Aditya");
     }
 }
