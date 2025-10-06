@@ -9,7 +9,7 @@ public class reversearray {
         while ( first < last){
             int temp = numbers[last];
             numbers[last]= numbers[first];
-            numbers[first]=numbers[last];
+            numbers[first]=temp;
             first++;
             last--;
         }
