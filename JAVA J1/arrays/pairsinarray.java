@@ -3,6 +3,7 @@ package arrays;
 public class pairsinarray {
 
     public static void pair(int numbers[]){
+        int tp = 0;
         for( int i = 0 ; i<numbers.length ; i++){
             int curr = numbers[i];
 
@@ -10,10 +11,12 @@ public class pairsinarray {
     
             for ( int j = i+1 ; j<numbers.length; j++ ){
                 System.out.print("(" + curr +"," + numbers[j] + ")");
+                tp++;
 
             }
 
             System.out.println();
+            System.out.print("total pairs"+ " = "+ tp);
 
         }
 
