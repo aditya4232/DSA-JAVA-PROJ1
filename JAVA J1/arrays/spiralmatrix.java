@@ -23,7 +23,7 @@ public class spiralmatrix {
 
             //bottom 
 
-            for ( int j = endcol-1; j<=startrow; j++){
+            for ( int j = endcol-1; j>=startcol; j--){
                 if( startrow == endrow ){
                     break;
                 }
@@ -32,25 +32,30 @@ public class spiralmatrix {
             }
 
             //left 
-            for( int i = endrow-1 ; i<=startrow+1; i++){
+            for( int i = endrow-1 ; i>=startrow+1; i--){
                 if( startcol == endcol ){
                     break;
                 }
-                System.out.println(matrix[i][startcol] + " ");
+                System.out.print(matrix[i][startcol] + " ");
             }
 
             startcol++;
             startrow++;
-            endcol++;
-            endrow++;
+            endcol--;
+            endrow--;
 
         }
+        System.out.println();
 
 
 
     } 
     public static void main(String[] args) {
-        int matrix [][] = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+        int matrix [][] = {
+            {1,2,3,4},
+        {5,6,7,8},
+        {9,10,11,12},
+        {13,14,15,16}};
         printspiral(matrix);
         
     }
