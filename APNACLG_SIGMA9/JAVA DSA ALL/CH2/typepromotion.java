@@ -7,6 +7,9 @@ public class typepromotion {
         System.out.println((int) (b) );
         System.out.println((int) (a) );
         System.out.println((int) (b - a) );
+
+        
+
     }
     
 }
