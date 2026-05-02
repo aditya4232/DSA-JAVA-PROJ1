@@ -12,4 +12,14 @@ public class swap {
         
         System.out.println("After swapping: a = " + a + ", b = " + b);
     }
+
+    public static int multiply(int a , int b) {
+        int product = a*b;
+        return product;
+    }
+
+    public static int divide(int a , int b) {
+        int quotient = a/b;
+        return quotient;
+    }
 }
